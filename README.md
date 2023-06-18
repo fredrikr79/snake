@@ -1,10 +1,13 @@
 # snake
+
 need i say more?
+
+### preface
 
 a while ago i learned some dvorak, got the basics. 
 getting increasingly more interested in the world of neovim,
-i decided to drop the dvorak, because the thought of relearning the vim-
-bindings in dvorak didnt tickle my fancy.
+i decided to drop the dvorak, because the thought of relearning 
+the vim-bindings in dvorak didnt tickle my fancy.
 
 yesterday at 3 am i got the idea to try dvorak again.
 this wasnt all random, i was partially inspired by
@@ -12,11 +15,12 @@ this wasnt all random, i was partially inspired by
 he is a dvorak + nvim user, as per my understanding.
 in so deciding, i had to get some practice in.
 what better way could there be to practice than to write up a snake game in python with
-unfamiliar modules - and then publish it alongside a readme due to some fancy never-before-seen bugs?
+unfamiliar modules (namely curses and using enums and collections.deque) -
+and then publish it alongside a readme due to some fancy never-before-seen bugs?
 
 quite the series of events that lead to this repo being created. and all for a game of snake...
 
-## usage
+### usage
 
 you will need to at the very least install the curses library for python3 to run this.
 when all dependencies are ready, grab the python file and run it normally in a terminal.
@@ -27,7 +31,7 @@ the game will start frozen. begin by moving in a direction using the correspondi
 
 if you care to, you may remap to wasd (or ,aoe for dvorak-gamers) through the inputkeys enum.
 
-## known bugs
+### known bugs
 
 the bug itself is weird. when tail and head enum values are the same, ie both are 'o',
 moving the character either down or to the right after having eaten food and gained an initial tail,
@@ -41,7 +45,7 @@ i believe the bug might then lie with curses. still i do not know for certain.
 
 what i do know (possibly) is that it failed in the get_player_head function.
 
-## reflections
+### reflections
 
 every key stroke from start to finish on this project and elsewhere has been
 through dvorak. it has been both painful and fun.
