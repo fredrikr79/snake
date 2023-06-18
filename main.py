@@ -169,6 +169,7 @@ def draw_board(game: Game) -> None:
 
 
 def main(stdscr):
+    global score
     game = Game(20, 10)
     game.init()
 
@@ -191,8 +192,11 @@ def main(stdscr):
 
         stdscr.refresh()
 
+    score = len(game.tail_stack)
+
 
 if __name__ == '__main__':
+    score = 0
     stdscr = curses.initscr()
     curses.noecho()
     curses.cbreak()
@@ -206,4 +210,6 @@ if __name__ == '__main__':
     curses.echo()
 
     curses.endwin()
+
+    print('your length: ', score)
 
